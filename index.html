@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign up form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page_image">
+        <div class="logo_wrapper">
+          <div class="logo">
+            <img src="./assets/images/odin-lined.png" alt="odin-lined" />
+            <div>Odin</div>
+          </div>
+        </div>
+        <div class="credit_creator">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Haile Weist</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+      </div>
+      <div class="sign_up_form">
+        <form id="sign_up_form" action="https://httpbin.org/post" method="post">
+          <div class="description">
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              <br />
+              Sign up <i>now</i> to get started.
+            </p>
+            <br />
+            <p>You <i>know</i> you want to.</p>
+          </div>
+          <div class="input_form">
+            <p>Let's do this!</p>
+            <div class="form_group">
+              <div class="form_group_top">
+                <div class="firstname_wrapper">
+                  <label for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder=""
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="lastname_wrapper">
+                  <label for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    placeholder=""
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form_group_middle">
+                <div class="email_wrapper">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder=""
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="phone_number_wrapper">
+                  <label for="phone_number">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone_number"
+                    name="phone_number"
+                    placeholder=""
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form_group_bottom">
+                <div class="password_wrapper">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    pattern="(?=.*[A-Z])(?=.*\d).{6,}"
+                    minlength="6"
+                    placeholder=""
+                    autocomplete="off"
+                    required
+                  />
+                  <span class="error_message password"></span>
+                </div>
+                <div class="confirm_password_wrapper">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    pattern="(?=.*[A-Z])(?=.*\d).{6,}"
+                    minlength="6"
+                    placeholder=""
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="create_button">
+            <button>Create Account</button>
+          </div>
+          <div class="log_in">
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
